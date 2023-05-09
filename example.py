@@ -1,7 +1,7 @@
 import numpy as np
 
 from src.model import Settings, generate_random_solution
-from src.algorithm import BeesSolver, stop_iterations, calculate_cost
+from src.algorithm import BeesSolver, calculate_cost
 
 settings = Settings(num_rocket_types=2,
                     num_module_types=4,
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     print(calculate_cost(random_solution, settings))
 
     print('\nBees solution')
-    bees_solution = solver.find_best_solution(stop_iterations(1000))
+    bees_solution = solver.find_best_solution(1000)
     print(bees_solution.rocket_type_allocation)
     print(bees_solution.module_allocation)
     print(calculate_cost(bees_solution, settings))
