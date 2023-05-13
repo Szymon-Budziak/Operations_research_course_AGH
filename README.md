@@ -37,6 +37,10 @@ objects. Then we are solving it using a *random solver* and *bees algorithm*. To
 script. The output will include the rocket type allocation, module allocation, and cost for both a random solution and
 the optimized Bees solution.
 
+### analysis.ipynb
+
+Jupyter notebook with analysis of the algorithm.
+
 ## Installation
 
 1. Clone the repository:
