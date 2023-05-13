@@ -148,13 +148,23 @@ class BeesSolver:
             self.simulate_population()
 
         return self.population[0]
-    
-    def init_population(self):
-        """ Generates random population. """
+
+    def init_population(self) -> None:
+        """
+        Generates random population.
+
+        Returns:
+            None
+        """
         self.population = [generate_random_solution(self.settings) for _ in range(self.population_size)]
-    
+
     def current_cost(self) -> float:
-        """ Returns current cost of first solution from population. """
+        """
+        Returns current cost of first solution from population.
+
+        Returns:
+            float: current cost of first solution from population
+        """
         return calculate_cost(self.population[0], self.settings)
 
 
