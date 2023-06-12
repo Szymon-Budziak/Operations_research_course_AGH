@@ -65,4 +65,5 @@ python example.py
 
 #### Credits
 
-This project was created by Szymon Budziak, Alicja Hurbol and [Jakub Szymczak](https://github.com/SzymczakJ).
+This project was created by [Szymon Budziak](https://github.com/Szymon-Budziak), Alicja Hurbol
+and [Jakub Szymczak](https://github.com/SzymczakJ).
